@@ -1,7 +1,5 @@
 package Sem1_dz1;
 
-import java.util.ArrayList;
-
 public class HotDrink extends Product {
     private final int temperatura;
 
@@ -21,9 +19,4 @@ public class HotDrink extends Product {
         " name=" + getName() +
         " }";
     }
-
-    public void overloaded(int repeat) {
-        for(int i = 0; i < repeat; i++){this.getTemperatura();}
-    }
-
 }
