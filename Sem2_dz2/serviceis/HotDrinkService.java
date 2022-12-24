@@ -1,7 +1,7 @@
 package Sem2_dz2.serviceis;
 
 import Sem2_dz2.entityes.Product;
-import Sem2_dz2.entityes.Menu;
+import Sem2_dz2.entityes.MenuHotDrink;
 import Sem2_dz2.entityes.HotDrink;
 import Sem2_dz2.repository.ProductRepository;
 
@@ -25,6 +25,6 @@ public class HotDrinkService {
     }
 
     public HotDrink getHotDrinkByName(String name) {
-        return Menu.valueOf(name).getHotDrink();
+        return MenuHotDrink.valueOf(name).getHotDrink();
     }
 }

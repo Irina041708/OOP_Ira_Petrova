@@ -1,6 +1,6 @@
 package Sem2_dz2.controller;
 
-import Sem2_dz2.entityes.Menu;
+import Sem2_dz2.entityes.MenuHotDrink;
 import Sem2_dz2.entityes.HotDrink;
 import Sem2_dz2.serviceis.HotDrinkService;
 import Sem2_dz2.view.GetHotDrinkResponse;
@@ -15,8 +15,8 @@ public class VendingMachineController {
     }
 
     
-    public Menu[] getMenu() {
-        return Menu.values();
+    public MenuHotDrink[] getMenu() {
+        return MenuHotDrink.values();
     }
 
     public GetHotDrinkResponse getHotDrink(String hotDrinkName) {
