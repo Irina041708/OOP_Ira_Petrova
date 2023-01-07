@@ -36,4 +36,7 @@ public class GetHotDrinkResponse {
     public void setError(String error) {
         this.error = error;
     }
+    public char[] compareTo(GetHotDrinkResponse hotDrink) {
+        return null;
+    }
 }

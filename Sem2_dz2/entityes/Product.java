@@ -1,8 +1,8 @@
 package Sem2_dz2.entityes;
 
-public class Product {
+public class Product implements Comparable<Product> {
     private ProductNameEnum name;
-    private int price;
+    private Integer price;
 
     public Product(ProductNameEnum name, int price) {
         this.name = name;
@@ -24,4 +24,10 @@ public class Product {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    @Override
+        public int compareTo(Product o){
+        return this.price.compareTo(o.price);
+    }
+
 }
